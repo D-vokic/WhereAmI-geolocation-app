@@ -3,10 +3,14 @@
 This is a simple JavaScript web application that shows the **country details** based on **geographic coordinates** (latitude and longitude). It demonstrates how to work with asynchronous JavaScript, REST APIs, and dynamic DOM manipulation using only **Vanilla JavaScript**.
 
 ---
+![App Screenshot](screenshot.png)
+
+*Figure 1: Application in Action*
+---
 
 ## ✨ Demo
 
-You can view a live demo of this project [here](https://d-vokic.github.io/).
+You can view a live demo of this project [here](https://d-vokic.github.io/WhereAmI-geolocation-app/).
 
 Call the `whereAmI(lat, lng)` function from the browser console with desired coordinates, and the app will:
 
@@ -18,7 +22,6 @@ Call the `whereAmI(lat, lng)` function from the browser console with desired coo
 ## Table of Contents
 
 - [Where Am I](#where-am-i)
-
   - [Demo](#demo)
   - [Table of Contents](#table-of-contents)
   - [Technologies Used](#technologies-used)
@@ -31,14 +34,6 @@ Call the `whereAmI(lat, lng)` function from the browser console with desired coo
   - [Author](#author)
   - [License](#license)
 
-  - [Prerequisites](#prerequisites)
-  - [How to Run](#how-to-run)
-  - [Usage](#usage)
-  - [Built with](#built-with)
-  - [Contributing / Support](#contributing--support)
-  - [Author](#author)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
 
 ## 🧰 Technologies Used
 
@@ -74,15 +69,6 @@ Call the `whereAmI(lat, lng)` function from the browser console with desired coo
 ## 🚀 Usage Example
 
 ```js
-// Germany (Berlin)
-whereAmI(52.508, 13.381);
-
-// India (Mumbai)
-whereAmI(19.037, 72.873);
-
-// South Africa (Cape Town)
-whereAmI(-33.933, 18.474);
-
 // Serbia (Belgrade)
 whereAmI(44.7866, 20.4489);
 
@@ -97,10 +83,14 @@ whereAmI(55.7558, 37.6173);
 
 ```
 where-am-i/
-├── index.html # HTML skeleton
-├── style.css # Basic styling for the app
-├── script.js # Main JavaScript logic (with fetch and DOM rendering)
-└── README.md # Project documentation
+├── index.html        # HTML skeleton
+├── style.css         # Basic styling for the app
+├── script.js         # Main JavaScript logic (with fetch and DOM rendering)
+├── .prettierrc       # Configuration file for Prettier code formatter
+├── .gitignore        # Specifies files and folders to be ignored by Git
+├── screenshot.png    # Screenshot showing the application in action
+├── LICENSE.md        # License information for the project
+└── README.md         # Project documentation
 ```
 
 ## 🧠 What You Will Learn
@@ -125,8 +115,8 @@ where-am-i/
 
 ## 👨‍💻 Author
 
-Duško Vokić
-Test technician & front-end developer
+#### [Dusko Vokic](https://duskovokic.com)  
+**Test Technician & Front-End Developer**  
 Passionate about learning and improving skills in JavaScript and web development.
 
 ## License
