@@ -6,7 +6,7 @@ This is a simple JavaScript web application that shows the **country details** b
 ![App Screenshot](screenshot.png)
 
 *Figure 1: Application in Action*
-
+---
 
 ## ✨ Demo
 
