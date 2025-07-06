@@ -1,8 +1,20 @@
 'use strict';
 
+/** @type {HTMLElement} Container where country information will be rendered */
 const countriesContainer = document.querySelector('.countries');
+
+/** @type {HTMLSelectElement} Dropdown for selecting a country */
 const countrySelect = document.getElementById('country-select');
 
+/**
+ * Fetches and loads the list of countries into the dropdown selector.
+ *
+ * Uses REST Countries API v3.1 to retrieve essential country details,
+ * sorts countries alphabetically, and enables the select input.
+ *
+ * @async
+ * @returns {Promise<void>}
+ */
 async function loadCountries() {
   try {
     const response = await fetch(
@@ -13,8 +25,10 @@ async function loadCountries() {
     const countries = await response.json();
     console.log('Countries received:', countries);
 
+    // Sort countries alphabetically by common name
     countries.sort((a, b) => a.name.common.localeCompare(b.name.common));
 
+    // Populate select options
     countrySelect.innerHTML =
       '<option value="">-- Select a country --</option>';
     countries.forEach(country => {
@@ -32,6 +46,10 @@ async function loadCountries() {
   }
 }
 
+/**
+ * Event listener for dropdown selection.
+ * When a country is selected, fetches its details and renders them.
+ */
 countrySelect.addEventListener('change', async function () {
   const selectedCountry = this.value;
   if (!selectedCountry) return;
@@ -54,6 +72,12 @@ countrySelect.addEventListener('change', async function () {
   }
 });
 
+/**
+ * Renders country data in the DOM.
+ *
+ * @param {Object} data - Country object returned from REST Countries API.
+ * @param {string} [className=''] - Optional additional CSS class for styling.
+ */
 const renderCountry = function (data, className = '') {
   const languages = data.languages
     ? Object.values(data.languages).join(', ')
@@ -86,11 +110,25 @@ const renderCountry = function (data, className = '') {
   countriesContainer.style.opacity = 1;
 };
 
+/**
+ * Displays an error message in the UI.
+ *
+ * @param {string} msg - Error message to be displayed.
+ */
 const renderError = function (msg) {
   countriesContainer.innerHTML = `<p class="error">${msg}</p>`;
   countriesContainer.style.opacity = 1;
 };
 
+/**
+ * Fetches and displays country information based on geographic coordinates.
+ *
+ * Uses reverse geocoding to determine the country from latitude and longitude,
+ * then fetches country details from the REST Countries API.
+ *
+ * @param {number} lat - Latitude.
+ * @param {number} lng - Longitude.
+ */
 const whereAmI = function (lat, lng) {
   fetch(
     `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`
@@ -119,8 +157,10 @@ const whereAmI = function (lat, lng) {
     });
 };
 
+// Initial load
 loadCountries();
 
+// Example geolocation lookups
 whereAmI(44.7866, 20.4489); // Belgrade
 whereAmI(47.4979, 19.0402); // Budapest
 whereAmI(55.7558, 37.6173); // Moscow
