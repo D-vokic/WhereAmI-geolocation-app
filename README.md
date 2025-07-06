@@ -69,15 +69,6 @@ Call the `whereAmI(lat, lng)` function from the browser console with desired coo
 ## 🚀 Usage Example
 
 ```js
-// Germany (Berlin)
-whereAmI(52.508, 13.381);
-
-// India (Mumbai)
-whereAmI(19.037, 72.873);
-
-// South Africa (Cape Town)
-whereAmI(-33.933, 18.474);
-
 // Serbia (Belgrade)
 whereAmI(44.7866, 20.4489);
 
