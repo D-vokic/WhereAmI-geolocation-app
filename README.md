@@ -18,18 +18,18 @@ Call the `whereAmI(lat, lng)` function from the browser console with desired coo
 ## Table of Contents
 
 - [Where Am I](#where-am-i)
-
   - [Demo](#demo)
   - [Table of Contents](#table-of-contents)
   - [Technologies Used](#technologies-used)
   - [How It Works](#how-it-works)
- - [Features](#features)
+  - [Features](#features)
   - [Usage Example](#usage-example)
   - [Project Structure](#project-structure)
   - [What You Will Learn](#what-you-will-learn)
   - [Notes](#notes)
   - [Author](#author)
   - [License](#license)
+
 
 ## 🧰 Technologies Used
 
