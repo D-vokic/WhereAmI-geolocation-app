@@ -3,6 +3,10 @@
 This is a simple JavaScript web application that shows the **country details** based on **geographic coordinates** (latitude and longitude). It demonstrates how to work with asynchronous JavaScript, REST APIs, and dynamic DOM manipulation using only **Vanilla JavaScript**.
 
 ---
+![App Screenshot](screenshot.png)
+
+*Figure 1: Application in Action*
+
 
 ## ✨ Demo
 
