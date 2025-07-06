@@ -6,7 +6,7 @@ This is a simple JavaScript web application that shows the **country details** b
 
 ## ✨ Demo
 
-You can view a live demo of this project [here](https://d-vokic.github.io/).
+You can view a live demo of this project [here](https://d-vokic.github.io/WhereAmI-geolocation-app/).
 
 Call the `whereAmI(lat, lng)` function from the browser console with desired coordinates, and the app will:
 
