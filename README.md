@@ -83,10 +83,14 @@ whereAmI(55.7558, 37.6173);
 
 ```
 where-am-i/
-├── index.html # HTML skeleton
-├── style.css # Basic styling for the app
-├── script.js # Main JavaScript logic (with fetch and DOM rendering)
-└── README.md # Project documentation
+├── index.html        # HTML skeleton
+├── style.css         # Basic styling for the app
+├── script.js         # Main JavaScript logic (with fetch and DOM rendering)
+├── .prettierrc       # Configuration file for Prettier code formatter
+├── .gitignore        # Specifies files and folders to be ignored by Git
+├── screenshot.png    # Screenshot showing the application in action
+├── LICENSE.md        # License information for the project
+└── README.md         # Project documentation
 ```
 
 ## 🧠 What You Will Learn
