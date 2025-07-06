@@ -120,8 +120,8 @@ where-am-i/
 
 ## 👨‍💻 Author
 
-Duško Vokić
-Test technician & front-end developer
+### [Duško Vokić](https://duskovokic.com)  
+**Test Technician & Front-End Developer**  
 Passionate about learning and improving skills in JavaScript and web development.
 
 ## License
