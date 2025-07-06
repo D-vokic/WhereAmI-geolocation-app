@@ -31,15 +31,6 @@ Call the `whereAmI(lat, lng)` function from the browser console with desired coo
   - [Author](#author)
   - [License](#license)
 
-  - [Prerequisites](#prerequisites)
-  - [How to Run](#how-to-run)
-  - [Usage](#usage)
-  - [Built with](#built-with)
-  - [Contributing / Support](#contributing--support)
-  - [Author](#author)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
-
 ## 🧰 Technologies Used
 
 - **HTML** & **CSS** – Page structure and styling
