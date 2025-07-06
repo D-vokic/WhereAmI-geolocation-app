@@ -8,8 +8,14 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="dropdown-container">
+      <label for="country-select">🌍 Where Am I?</label>
+      <select id="country-select">
+        <option value="">-- Loading countries... --</option>
+      </select>
+    </div>
+
     <main class="container">
-      <h1>🌍 Where Am I?</h1>
       <section class="countries"></section>
     </main>
     <footer class="footer">
